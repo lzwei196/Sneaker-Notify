@@ -30,7 +30,7 @@ class MYSQL_Pipeline(object):
     
   def __init__(self):
     # Database connection info. (host, user, password, database)
-    self.conn = MySQLdb.connect(host='miniapp', user='wuarthur', passwd='a12345678', db='Sneakers', charset="utf8", use_unicode=True)
+    self.conn = MySQLdb.connect(host='localhost', user='wuarthur', passwd='a12345678', db='Sneakers', charset="utf8", use_unicode=True)
     self.conn.ping(True)
     self.cursor = self.conn.cursor()
     
