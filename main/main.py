@@ -10,6 +10,7 @@ import logging
 import re
 import time
 
+
 from colorama import Fore, Style, init
 from scrapy import Spider
 from scrapy.crawler import CrawlerProcess
