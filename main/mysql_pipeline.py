@@ -535,8 +535,9 @@ class MYSQL_Pipeline(object):
           # print(Fore.RED + 'TWEET LOG SUCCESS: ' + DATE + ' EST ' + item['name'] + ' ' + item['link'] + Style.RESET_ALL if TWEET.status_code == 200 else Fore.RED + 'TWEET LOG FAILURE: FAILED TO TWEET' + Style.RESET_ALL)
 		  
 		  # WebHook for Discord. Comment/Uncomment the line below to enable/disable.
-          #discurl = 'https://discordapp.com/api/webhooks/529900505401393155/cb6JTsL_DDhsqbkgUyyqFOskAo3K0XOBWS8JwfC-ZcCat-M8qjxKpQqfulTs4jJsINdV'
-          #requests.post(discurl, data={'content': "**" + item['name'] + "**" + "\n" + item['link'] + "\n" + "\n" + "[ATC]: " + item['size'] + "\n" + "------------" + "\n"})
+          discurl = 'https://discordapp.com/api/webhooks/529900505401393155/cb6JTsL_DDhsqbkgUyyqFOskAo3K0XOBWS8JwfC-ZcCat-M8qjxKpQqfulTs4jJsINdV'
+          requests.post(discurl, data={'content': "**" + item['name'] + "**" + "\n" + item['link'] + "\n" + "\n" + "[ATC]: " + item['size'] + "\n" + "------------" + "\n"})
+		  
 		  print("**" + item['name'] + "**" + "\n" + item['link'] + "\n" + "\n" + "[ATC]: " + item['size'] + "\n" + "------------" + "\n")
 
 		 # WebHook for Slack. Comment/Uncomment the line below to enable/disable.
