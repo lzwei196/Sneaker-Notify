@@ -537,7 +537,7 @@ class MYSQL_Pipeline(object):
 		  # WebHook for Discord. Comment/Uncomment the line below to enable/disable.
           print("**" + item['name'] + "**" + "\n" + item['link'] + "\n" + "\n" + "[ATC]: " + item[
               'size'] + "\n" + "------------" + "\n")
-          # discurl = 'https://discordapp.com/api/webhooks/529900505401393155/cb6JTsL_DDhsqbkgUyyqFOskAo3K0XOBWS8JwfC-ZcCat-M8qjxKpQqfulTs4jJsINdV'
+          # discurl = 'https://discordapp.com/api/webhooks/533835559043334165/T6hSuZahCvNPkuXqhDO7KStIhfif5LhXtVMDhl1VZP5xkEKvSMKwhGNte7657lF10DSk'
           # requests.post(discurl, data={'content': "**" + item['name'] + "**" + "\n" + item['link'] + "\n" + "\n" + "[ATC]: " + item['size'] + "\n" + "------------" + "\n"})
 
 
